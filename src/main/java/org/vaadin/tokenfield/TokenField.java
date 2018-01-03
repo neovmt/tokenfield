@@ -669,7 +669,7 @@ public class TokenField extends CustomField implements Container.Editor {
             return;
         }
         for (Button b : buttons.values()) {
-            b.setEnabled(readOnly);
+            b.setEnabled(!readOnly);
         }
         super.setReadOnly(readOnly);
         if (readOnly) {
